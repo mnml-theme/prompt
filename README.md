@@ -4,6 +4,10 @@
 ===============
 A **m**i**n**i**m**a**l** [_Z sh_]ell [prompt theme].
 
+![](carbon.png)
+
+\*Preview shows [_Dracula_ theme] with _[JetBrains Mono] [Nerd font]_.
+
 Compatible with [.files].
 
 Install
@@ -87,6 +91,10 @@ License
 [Daniel Bayley]:        https://github.com/danielbayley
 
 [mnml]:                 https://github.com/danielbayley?tab=repositories&q=mnml
+
+[_Dracula_ theme]:      https://draculatheme.com/terminal
+[JetBrains Mono]:       https://jetbrains.com/lp/mono
+[Nerd font]:            https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
 
 [homebrew]:             https://brew.sh
 [.files]:               https://github.com/danielbayley/homebrew-dotfiles
