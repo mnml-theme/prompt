@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mnml-theme/mnml.github.io/master/img/logo.svg" width="9%" align="right">
+<img src="https://raw.githubusercontent.com/mnml-theme/mnml.github.io/main/img/logo.svg" width="9%" align="right">
 
 [mnml] [prompt]
 ===============
