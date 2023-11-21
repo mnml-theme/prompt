@@ -80,7 +80,7 @@ fonts=(
   'Lig(atur)?[^h]'
 )
 
-fontFamily() { perl -ne "/fontFamily.*['\"](.+?)[,'\"]/ && print \$1" < $1 }
+fontFamily() awk -F "[',]" '/fontFamily/{ print $2 }' < $1
 
 case $TERM_PROGRAM in
   Apple_Terminal) osascript -l JavaScript -e 'Application("Terminal").windows[0].fontName()';;
