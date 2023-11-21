@@ -82,15 +82,13 @@ fonts=(
 
 fontFamily() { perl -ne "/fontFamily.*['\"](.+?)[,'\"]/ && print \$1" < $1 }
 
-case $__CFBundleIdentifier in
-  com.apple.Terminal) osascript -e 'tell app "Terminal" to get font name of window 1';;
+case $TERM_PROGRAM in
+  Apple_Terminal) osascript -l JavaScript -e 'Application("Terminal").windows[0].fontName()';;
 
-  co.zeit.hyper) fontFamily ~/.hyper.js;;
+  Hyper) fontFamily ~/.hyper.js;;
 
-  com.github.atom*) fontFamily ${ATOM_HOME:-~/.atom}/config.cson(N);;
-
-  com.visualstudio.code*) : local ${VSCODE_APPDATA:=~/Library/Application Support}
-    fontFamily $VSCODE_APPDATA/{Code,VSCodium}/User/settings.json(Nom[1])
+  vscode) : local ${VSCODE_APPDATA:=~/Library/Application Support}
+    fontFamily $VSCODE_APPDATA/{Code,VSCodium}/User/settings.json(om[1]N)
 
 esac | read font
 unfunction fontFamily
